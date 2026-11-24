@@ -1,0 +1,36 @@
+TEST CASES AND VERIFICATION
+
+Testing scripts: test_cases.py,verify_meu.py
+Testing framework: Python unittest and assertion-based testing
+
+PURPOSE
+
+These test cases verify four major components of the assignment: DBN model construction, evidence generation, individual MEU decision-making, and combined DBN inference with three-action MEU decision-making.
+
+TEST 1: DBN MODEL CONSTRUCTION
+
+Files: model.py, needhelp_dbn.py
+
+Input:
+
+Saved models: dbn_model.pkl and needhelp_dbn.pkl
+
+NeedHelp prior: [0.60, 0.40]
+
+NeedHelp transition CPT: [[0.85, 0.25], [0.15, 0.75]]
+
+Expected Output:
+
+Both DBN models pass check_model().
+
+Each CPT's conditional probability distribution sums to 1.
+
+The prior and transition probabilities match their defined values.
+
+Observation CPTs are consistent across time slices.
+
+The model files are saved successfully.
+
+Verification:
+The model scripts were executed successfully, and the .pkl files were generated. Formal unit-test assertions for every CPT have not yet been separately confirmed.
+
